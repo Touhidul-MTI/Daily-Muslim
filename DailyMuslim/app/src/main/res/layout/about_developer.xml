@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/localBackground">
+
+    <LinearLayout
+        android:id="@+id/about_developer_LL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/customstyle1">
+
+        <TextView
+            android:id="@+id/about_developer_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muhammad Touhidul Islam"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:padding="15dp"/>
+
+        <TextView
+            android:id="@+id/about_developer_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mdtislam94@gmail.com\niMTILab.github.io"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:padding="15dp"/>
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/about_developer_b1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/dev_backHomeText"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:background="@drawable/customstyle_button_background" />
+</LinearLayout>

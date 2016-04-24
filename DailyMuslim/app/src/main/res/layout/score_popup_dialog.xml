@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/localBackground">
+
+    <TextView
+        android:id="@+id/score_popup_dialog_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/score_popup_dialog_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:padding="15dp"/>
+    <Button
+        android:id="@+id/score_popup_dialog_b1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/dev_backHomeText"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/customstyle_button_background" />
+</LinearLayout>

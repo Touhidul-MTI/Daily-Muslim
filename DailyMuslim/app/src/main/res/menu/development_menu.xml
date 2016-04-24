@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="স্কোর মুছে ফেলুন"
+        android:id="@+id/dev_menu_resetScore"
+        android:numericShortcut="1"
+        />
+</menu>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.imtilab.dailymuslim.QuesAns"
+    android:background="@color/localBackground">
+
+    <RelativeLayout
+        android:id="@+id/quesans_RL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/quesans_tv1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="প্রশ্ন নং:"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:paddingRight="2dp"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/quesans_tv11"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="1"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/quesans_tv1"
+            android:layout_toEndOf="@id/quesans_tv1"/>
+        <LinearLayout
+            android:id="@+id/quesans_LL3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+            <TextView
+                android:id="@+id/quesans_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="স্কোরঃ"
+                android:textSize="20sp"
+                android:paddingRight="2dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/quesans_tv22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="20sp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/quesans_tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quesans_initQuesText"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="15dp"
+        android:layout_below="@id/quesans_RL1"/>
+    <TextView
+        android:id="@+id/quesans_tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:padding="15dp"
+        android:layout_below="@id/quesans_tv3"/>
+    <LinearLayout
+        android:id="@+id/quesans_LL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/quesans_b1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="না"
+            android:textSize="20sp"
+            android:background="@drawable/customstyle_button_background"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:layout_marginRight="7.5dp"
+            android:layout_weight="1"
+            android:onClick="clicked_quesans_b1_no"/>
+        <Button
+            android:id="@+id/quesans_b2"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="হ্যা"
+            android:textSize="20sp"
+            android:background="@drawable/customstyle_button_background"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:layout_marginLeft="7.5dp"
+            android:layout_weight="1"
+            android:onClick="clicked_quesans_b1_yes"/>
+    </LinearLayout>
+
+</RelativeLayout>
